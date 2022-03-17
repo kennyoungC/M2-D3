@@ -8,11 +8,120 @@ body {
   line-height: 1.3;
   font-family: "Roboto", sans-serif;
 }
+.bg-dark {
+  background-color: rgb(9 9 10) !important;
+  color: #fff !important;
+}
+.logo {
+  width: 70%;
+}
 .jumbotron {
-  background-image: url(./images/travel\ cover.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
+  position: relative;
+  height: 80vh;
+  position: relative;
+
+  background-image: linear-gradient(
+      rgba(32, 31, 31, 0.6),
+      rgba(44, 42, 42, 0.6)
+    ),
+    url(./images/travel\ cover.jpg);
+  background-size: cover;
+  color: #fff;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50px);
+}
+.live-text {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+  font-weight: 900;
+  position: absolute;
+  top: 90%;
+  right: 50%;
+  transform: translate(50%);
+  z-index: 55555;
+}
+.richer {
+  font-size: 48px;
+  font-weight: 900;
+}
+h1 {
+  font-size: 96px !important;
+  font-family: "Permanent Marker", cursive;
+}
+.sub-header {
+  font-size: 32px;
+  font-weight: 900;
+}
+nav a {
+  font-size: 24px;
+}
+.nav-flex {
+  justify-items: end !important;
+}
+.catchy-quote {
+  font-size: 18px;
+  font-style: italic;
+}
+.obj-img {
+  height: 254px;
+  object-fit: cover;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.city {
+  display: inline-block;
+
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.city-quote {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.city {
+  display: inline-table;
+  vertical-align: middle;
+  margin: 1em;
+  padding: 0.5em 1em;
+  background: linear-gradient(
+        to right,
+        transparent 20%,
+        #ffe3e3 20%,
+        #ffe3e3 80%,
+        transparent 80%
+      )
+      bottom no-repeat,
+    linear-gradient(to top, #ffe3e3 0%, #ffe3e3 300%) right 300% no-repeat,
+    linear-gradient(to right, #ffe3e3 0%, #ffe3e3 100%) 9000% 0 no-repeat,
+    linear-gradient(to top, #ffe3e3 0%, #ffe3e3 300%) left 9000% no-repeat;
+  transition: background-size 2s ease-in;
+}
+.city,
+.city ~ .city:hover {
+  background-size: 100% 8px, 3px 0, 3px 3px, 3px 0;
+  cursor: pointer;
+}
+.city:hover,
+.city ~ .city {
+  background-size: 200% 3px, 3px 100%, 100% 3px, 3px 100%;
+  transition: background-size 2s ease-in-out;
+}
+.filt {
+  filter: brightness(70%);
+  height: 482px;
   object-fit: cover;
 }

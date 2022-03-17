@@ -8,6 +8,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;700&family=Kumbh+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&family=Rubik:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -24,9 +30,9 @@
     <title>Travel Agency</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-0 my-0">
       <a class="navbar-brand" href="#"
-        ><img src="./images/obi's.png" alt=""
+        ><img class="logo" src="./images/obi's.png" alt=""
       /></a>
       <button
         class="navbar-toggler"
@@ -39,22 +45,22 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
+      <div class="collapse navbar-collapse nav-flex" id="navbarScroll">
         <ul
           class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
           style="max-height: 100px"
         >
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link text-white" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link text-white" href="#">Link</a>
           </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle text-white"
               href="#"
               id="navbarScrollingDropdown"
               role="button"
@@ -65,13 +71,17 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Another action</a>
+              </li>
               <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Link</a>
+            <a class="nav-link disabled text-white">Link</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -81,19 +91,175 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success text-white" type="submit">
+            Search
+          </button>
         </form>
       </div>
     </nav>
     <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">
-          This is a modified jumbotron that occupies the entire horizontal space
-          of its parent.
+      <div class="container text-center text-box">
+        <h1 class="display-4">TRAVEL...</h1>
+        <p class="lead sub-header">
+          its the only thing you buy that makes you
+          <span class="richer">Richer</span>
+        </p>
+        <p class="catchy-quote">
+          WHO’S THE IDEAL PERSON TO SHOW YOU ROUND A NEW CITY? SOMEONE LOCAL WHO
+          SHARES YOUR INTERESTS, RIGHT? RIGHT. THAT’S KENNYOUNGC: THE INSIDER’S
+          VIEW OF A CITY.
         </p>
       </div>
+      <p class="lead live-text">
+        "live, travel, adventure, bless, and don't be sorry"
+      </p>
     </div>
+    <section class="container" id="who-are-we">
+      <hr />
+      <h2 class="text-center">--- WHO ARE WE---</h2>
+      <hr />
+      <div class="row">
+        <div class="col-4">
+          <div class="card text-center">
+            <img
+              src="./images/our mission.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Our Mission</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More &RightArrow;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card text-center">
+            <img
+              src="./images/achievement.jpg"
+              class="card-img-top obj-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Achievement</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More &RightArrow;</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card text-center">
+            <img
+              src="./images/history.jpg"
+              class="card-img-top obj-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Agency History</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More &RightArrow;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid my-5">
+      <hr />
+      <h2 class="text-center my-5">DISCOVER OUR CITY GUIDES</h2>
+      <hr />
+      <div class="row">
+        <div class="col-6 mb-3">
+          <img
+            class="img fluid w-100 filt"
+            src="./images/amsterdam.jpg"
+            alt="amsterdam city"
+            
+          />
+          <div class="centered text-white text-center">
+            <p class="city">amasterdam</p>
+
+            <p class="city-quote">the city of sin</p>
+          </div>
+        </div>
+
+        
+        <div class="col-6 mb-3">
+          <img
+          class="img fluid w-100 filt"
+          src="./images/barcelona.avif"
+          alt="barcelona city"
+          />
+          <div class="centered text-white text-center">
+            <p class="city">Barcelona</p>
+            
+            <p class="city-quote">city of artistic treasure</p>
+          </div>
+        </div>
+        <div class="col-6 mb-3">
+          <img
+          class="img fluid w-100 filt"
+          src="./images/berlin.jpg"
+          alt="berlin city"
+          />
+          <div class="centered text-white text-center">
+            <p class="city">berlin</p>
+            
+            <p class="city-quote">Keep calm and go to Berlin</p>
+          </div>
+        </div>
+        <div class="col-6 mb-3">
+          <img
+          class="img fluid w-100 filt"
+          src="./images/brussel.jpg"
+          alt="brussel city"
+          />
+          <div class="centered text-white text-center">
+            <p class="city">brussel</p>
+            
+            <p class="city-quote">Keep calm and go to Berlin</p>
+          </div>
+        </div>
+        <div class="col-6 mb-3">
+          <img
+          class="img fluid w-100 filt"
+          src="./images/istanbul.avif"
+          alt="istanbul city"
+          />
+          <div class="centered text-white text-center">
+            <p class="city">istanbul</p>
+            
+            <p class="city-quote">Keep calm and go to Berlin</p>
+          </div>
+        </div>
+        <div class="col-6 mb-3">
+          <img
+          class="img fluid w-100 filt"
+          src="./images/kuala lumpur.avif"
+          alt="kuala lumpur city"
+          />
+          <div class="centered text-white text-center">
+            <p class="city">kuala lumpur</p>
+            
+            <p class="city-quote">Keep calm and go to Berlin</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
+    In this section you should have:
+       - 4 destinations per row when the screen is very large
+       - 3 destinations per row when you are on a tablet (or a smaller window)
+       - 2 destinations per row when you are on a small screen -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
