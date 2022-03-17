@@ -143,15 +143,14 @@ nav a {
   gap: 36px;
 }
 .deal-cont {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
+  /* border-radius: 11px; */
   overflow: hidden;
   transition: all 0.4s;
 }
 
 .deal-cont:hover {
-  transform: translateX(-2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.09);
+  transform: translateY(-1rem);
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.4);
 }
 /* slider */
 
