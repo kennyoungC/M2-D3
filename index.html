@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,6 +27,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <title>Travel Agency</title>
   </head>
@@ -336,10 +339,10 @@
   <hr>
   <h2 class="text-center my-5">DEAL OF THE WEEK</h2>
   <hr>
-  <div class="row">
-    <div class="col-5 col-xl-4">
+  <div class="row justify-content-md-center">
+    <div class="col-12 col-md-8  col-xl-5">
       <div class="row">
-        <div class="col-12 mb-2 deal-cont deal-box pl-0 ">
+        <div class="col-12  mb-2 deal-cont deal-box pl-0 ">
           
             <div class=" ">
               <img class="img-fluid  deal-img" src="./images/tokyo.jpg" alt="tokyo cover">
@@ -393,7 +396,7 @@
 
       </div>
     </div>
-    <div class="col-7 col-xl-8">
+    <div class="col-12 col-md-12 col-xl-7">
       <div class="slider">
         <div class="slide slider--1">
           <img class="slide-img" src="./images/tokyo.jpg" alt="">
@@ -484,12 +487,108 @@
             - 66% of the page with a picture of the destination
             - 33% with Name, dates, price and a short description -->
 <section class="container" id="deal-of-d-day">
-  <div class="row">
-    <div class="col-8">
+  <hr>
+  <h2 class="text-center my-5">DEAL OF THE DAY</h2>
+  <hr>
+  <div class="row justify-content-sm-center justify-content-lg-start">
+    <div class="col-12 col-lg-8 mb-2 ">
       <img src="./images/maldives.jpg" class="img-fluid w-100" alt="maldives cover">
     </div>
-    <div class="col-4">
-      
+    <div class="col-12 col-lg-4 d-flex flex-column second-col justify-content-between">
+      <div>
+        <h5 class="resort">MALDIVES RESORT BEACH</h5>
+        <p class="from">from <span class="price">99€</span> per night <span class="precent-off">35% OFF</span></p>
+        <p class="from-day">from 3 Mar&mdash;4 May </p>
+        <p class="from-hotel">Hotel</p>
+        <p class="price">OZEN RESERVE EXPERIENCE - Luxury All Inclusive</p>
+        <p class="rating"> 4.7 <span><ion-icon class="star-icon" name="star"></ion-icon></span><span><ion-icon class="star-icon" name="star"></ion-icon></span><span><ion-icon class="star-icon" name="star"></ion-icon></span><span><ion-icon class="star-icon" name="star"></ion-icon></span><span><ion-icon class="star-icon" name="star"></ion-icon></span><span class="text-dark lead">"Outstanding"</span><span class="from">(60 ratings)</span>
+        </p>
+      </div>
+      <div class="decription-box">
+        <p >The islands of the Maldives are best experienced in the summertime when they have dry weather. There are nearly 1,200 islands along the Maldives archipelago, so there are many options for a tropical summer vacation. The draw of the islands are the deep blue seas, water sports, beautiful coral reefs, and tropical beaches.
+          <span class="collapse d-sm-block collapse" id="collapseExample">
+            
+            The summer weather, with warm and dry conditions, enables you to spend the most time out exploring the islands and the Indian Ocean waters. The islands are surrounded by reefs, so the pleasant weather days make it nice to spend time in the water to see some of the spectacular reefs and aquatic life.</span></p>
+          </div>
+          <a class="btn btn-primary   d-sm-none d-md-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Read more &RightArrow;
+          </a>
+    </div>
+  </div>
+</section>
+<section class="section container" id="section--2">
+  <div class="section__title">
+    <h2 class="section__description">Operations</h2>
+    <h3 class="section__header">
+      Everything as simple as possible, but no simpler.
+    </h3>
+  </div>
+
+  <div class="operations">
+    <div class="operations__tab-container">
+      <button
+        class="btn1 operations__tab operations__tab--1 operations__tab--active"
+        data-tab="1"
+      >
+        <span>01</span>Instant Transfers
+      </button>
+      <button class="btn1 operations__tab operations__tab--2" data-tab="2">
+        <span>02</span>Instant Loans
+      </button>
+      <button class="btn1 operations__tab operations__tab--3" data-tab="3">
+        <span>03</span>Instant Closing
+      </button>
+    </div>
+    <div
+      class="operations__content operations__content--1 operations__content--active"
+    >
+      <div class="operations__icon operations__icon--1">
+        <svg>
+          <use xlink:href="img/icons.svg#icon-upload"></use>
+        </svg>
+      </div>
+      <h5 class="operations__header">
+        Tranfser money to anyone, instantly! No fees, no BS.
+      </h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <div class="operations__content operations__content--2">
+      <div class="operations__icon operations__icon--2">
+        <svg>
+          <use xlink:href="img/icons.svg#icon-home"></use>
+        </svg>
+      </div>
+      <h5 class="operations__header">
+        Buy a home or make your dreams come true, with instant loans.
+      </h5>
+      <p>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+      </p>
+    </div>
+    <div class="operations__content operations__content--3">
+      <div class="operations__icon operations__icon--3">
+        <svg>
+          <use xlink:href="img/icons.svg#icon-user-x"></use>
+        </svg>
+      </div>
+      <h5 class="operations__header">
+        No longer need your account? No problem! Close it instantly.
+      </h5>
+      <p>
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat.
+      </p>
     </div>
   </div>
 </section>
