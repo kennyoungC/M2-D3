@@ -15,6 +15,14 @@
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,400;1,500;1,600;1,700&family=Inter:wght@400;500;700&family=Kumbh+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&family=Rubik:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -33,24 +41,27 @@
     <title>Travel Agency</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark py-0 my-0">
-      <a class="navbar-brand" href="#"
-        ><img class="logo" src="./images/obi's.png" alt=""
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarScroll"
-        aria-controls="navbarScroll"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse nav-flex" id="navbarScroll">
+   
+     <nav class="navbar navbar-expand-lg navbar-light bg-dark py-0 my-0 pb-2">
+       
+          <a class="navbar-brand pt-0 mr-0" href="#"
+            ><img class="logo img-fluid w-55" src="./images/obi's.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler bg-white"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+      <div class="collapse navbar-collapse nav-flex " id="navbarScroll">
         <ul
-          class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll"
+          class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll nav__links"
           style="max-height: 100px"
         >
           <li class="nav-item active">
@@ -59,32 +70,37 @@
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Link</a>
+            <a class="nav-link text-white nav__link" href="#discover">Discover</a>
           </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle text-white"
+              class="nav-link nav__link dropdown-toggle text-white"
               href="#"
               id="navbarScrollingDropdown"
               role="button"
               data-toggle="dropdown"
               aria-expanded="false"
             >
-              Link
+              Deals
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item nav__link" href="#deal-of-d-day">DEAL OF THE DAY</a></li>
               <li>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item nav__link" href="#deal-of-d-week">DEAL OF THE WEEK</a>
               </li>
               <li><hr class="dropdown-divider" /></li>
               <li>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item nav__link" href="#faq">FAQ</a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#deal-of-d-week" class="nav-link  text-white">DOTW</a>
+            <a href="#welcome" class="nav-link  text-white nav__link">Welcome-Summer</a>
+
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link  text-white btn--show-modal"data-target="#exampleModal" data-toggle="modal">Contact Us</a>
+             <!-- Button trigger modal -->
 
           </li>
         </ul>
@@ -120,7 +136,7 @@
     </div>
     <section class="container" id="who-are-we">
       <hr />
-      <h2 class="text-center">--- WHO ARE WE---</h2>
+      <h2 class="text-center">WHO ARE WE</h2>
       <hr />
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
@@ -176,7 +192,7 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid my-5">
+    <section class="container-fluid my-5" id="discover">
       <hr />
       <h2 class="text-center my-5">DISCOVER OUR CITY GUIDES</h2>
       <hr />
@@ -418,70 +434,72 @@
 <!-- Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
  In this section you should have:
  - 6 destinations per row when the screen is very large - 3 destinations per row when you are on a tablet (or a smaller window) - 2 destinations per row when you are on a small screen -->
-<section class="welcome-summer container-fluid">
-  <hr>
-  <h2 class="text-center my-5">WELCOME SUMMER</h2>
-  <hr>
-<div class="row">
-  <div class="col-12 col-12 col-sm-6 col-lg-4 col-xl-2 mb-3">
-    <div class="card">
-      <img src="./images/zermatt.jpg" class="card-img-top obj-img" alt="zermatt cover">
-      <div class="card-body">
-        <h4>Zermatt</h4>
-        <p class="card-text">Summertime in Zermatt, Switzerland is flush with color. It is when the snowcapped mountains are accented with lush, green meadows and a mesmerizing blue color in the lakes and so on</p>
+<section class="welcome-summer container-fluid" id="welcome">
+  <div>
+    <hr>
+    <h2 class="text-center my-5 welcome">WELCOME SUMMER</h2>
+    <hr>
+  <div class="row">
+    <div class="col-12 col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 badges">
+      <div class="card">
+        <img src="./images/zermatt.jpg" class="card-img-top obj-img" alt="zermatt cover">
+        <div class="card-body">
+          <h4>Zermatt</h4>
+          <p class="card-text">Summertime in Zermatt, Switzerland is flush with color. It is when the snowcapped mountains are accented with lush, green meadows and a mesmerizing blue color in the lakes and so on</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3">
-
-    <div class="card">
-      <img src="./images/seattle.jpg" class="card-img-top obj-img" alt="seattle cover">
-      <div class="card-body">
-        <h4>Seattle</h4>
-        <p class="card-text">The city of Seattle is known for two things: great coffee and gloomy weather. The summer is high tourist season in this low-key city, so hotel rates are higher but it is a great time to visit.</p>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 badges">
+  
+      <div class="card">
+        <img src="./images/seattle.jpg" class="card-img-top obj-img" alt="seattle cover">
+        <div class="card-body">
+          <h4>Seattle</h4>
+          <p class="card-text">The city of Seattle is known for two things: great coffee and gloomy weather. The summer is high tourist season in this low-key city, so hotel rates are higher but it is a great time to visit.</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3">
-    <div class="card">
-      <img src="./images/marseille.jpg" class="card-img-top obj-img" alt="marseille cover">
-      <div class="card-body">
-        <h4>Marseille</h4>
-        <p class="card-text">A summer visit to France in the port city of Marseille is one of the best places in the country to visit in the warmer months. The summer climate, especially in June and July, is spectacular </p>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 badges">
+      <div class="card">
+        <img src="./images/marseille.jpg" class="card-img-top obj-img" alt="marseille cover">
+        <div class="card-body">
+          <h4>Marseille</h4>
+          <p class="card-text">A summer visit to France in the port city of Marseille is one of the best places in the country to visit in the warmer months. The summer climate, especially in June and July, is spectacular </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3">
-
-    <div class="card">
-      <img src="./images/edinburgh.jpg" class="card-img-top obj-img" alt="edinburgh cover">
-      <div class="card-body">
-        <h4> Edinburgh</h4>
-        <p class="card-text">Summer is festival time in Edinburgh and the height of tourist season, so book travel and hotels far in advance. You can also Walk round the city and take a sightseeing tour on a double bus</p>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 badges">
+  
+      <div class="card">
+        <img src="./images/edinburgh.jpg" class="card-img-top obj-img" alt="edinburgh cover">
+        <div class="card-body">
+          <h4> Edinburgh</h4>
+          <p class="card-text">Summer is festival time in Edinburgh and the height of tourist season, so book travel and hotels far in advance. You can also Walk round the city and take a sightseeing tour on a double bus</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3">
-
-    <div class="card">
-      <img src="./images/chigago.jpg" class="card-img-top obj-img" alt="chigago cover">
-      <div class="card-body">
-        <h4>Chigago</h4>
-        <p class="card-text">Walking the Magnificent Mile and spending time in Grant Park. With the sun at its full potential in July and August, you can get a great reflective selfie in "The Bean" sculpture in Millennium Park.</p>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 badges">
+  
+      <div class="card">
+        <img src="./images/chigago.jpg" class="card-img-top obj-img" alt="chigago cover">
+        <div class="card-body">
+          <h4>Chigago</h4>
+          <p class="card-text">Walking the Magnificent Mile and spending time in Grant Park. With the sun at its full potential in July and August, you can get a great reflective selfie in "The Bean" sculpture in Millennium Park.</p>
+        </div>
       </div>
     </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3 badges">
+  
+     <div class="card">
+        <img src="./images/machu piccu.jpg" class="card-img-top obj-img" alt="machu piccu cover">
+        <div class="card-body">
+         <h4> Machu Piccu</h4>
+          <p class="card-text">Since Machu Piccu is a bucket-list vacation for many people, it is best to experience it in the summer, when there is less chance of rain showers and inclement weather, especially if you plan to hike. </p>
+        </div>
+     </div>
+    </div>
   </div>
-  <div class="col-12 col-sm-6 col-lg-4 col-xl-2 mb-3">
-
-   <div class="card">
-      <img src="./images/machu piccu.jpg" class="card-img-top obj-img" alt="machu piccu cover">
-      <div class="card-body">
-       <h4> Machu Piccu</h4>
-        <p class="card-text">Since Machu Piccu is a bucket-list vacation for many people, it is best to experience it in the summer, when there is less chance of rain showers and inclement weather, especially if you plan to hike. </p>
-      </div>
-   </div>
   </div>
-</div>
 </section>
 <!--    Ex 6) Implement a "Deal of the day" section. In this section you'll have:
             - 66% of the page with a picture of the destination
@@ -520,7 +538,7 @@
   <hr>
   <p class="text-center">TESTIMONIALS</p>
   <h2 class="text-center mb-5">
-    Once you try it, you can't go back
+    With us, Travelling Has Never Been Easier
   </h2>
   <hr>
   
@@ -566,24 +584,134 @@
     </div>
   </div>
 </section>
-<footer class="container-fluid footer">
-  <div class="row text-center">
+<section class="container" id="faq">
+  <div class="row">
+    <div class="col-12">
+      <h5 class="faq-header">FAQ</h5>
+      <div class="item">
+        <!-- <p class="number">01</p> -->
+        <p class="subheader">Who operates the travel arrangements on this website?</p>
+        <!-- <button class="arrow-open"> -->
+        <i class="arrow-down arrow-up"></i>
+        <!-- </button> -->
+  
+        <div class="hidden-box">
+          <p class="faq-text">
+            Everything you see on this site; all the products and packages are created by us. KENNYOUNGC organises all the travel arrangements in close co-operation with the very best local providers who are valuable members of our team.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <!-- <p class="number">02</p> -->
+        <p class="subheader">How far in advance should I book?</p>
+        <!-- <button class="arrow-open"> -->
+        <i class="arrow-down arrow-up"></i>
+        <!-- </button> -->
+  
+        <div class="hidden-box">
+          <p class="faq-text">
+            All travel arrangements should be booked at least 48 hours in advance. For holiday packages and custom-made tours, we strongly recommend you book with a few weeks/months notice. For larger groups we recommend you book with a few months’ notice.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <!-- <p class="number">03</p> -->
+        <p class="subheader">What if I need to cancel my tour?</p>
+        <!-- <button class="arrow-open"> -->
+        <i class="arrow-down arrow-up"></i>
+        <!-- </button> -->
+  
+        <div class="hidden-box">
+          <p class="faq-text">
+            We regret that we are unable to offer a full refund in the case of cancellation. The cancellation fee depends upon the length of notice and type of booking. Please refer to our Booking Information section “Cancellations.”
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <!-- <p class="number">04</p> -->
+        <p class="subheader">How do I pay for my bookings at KENNYOUNGC travels?</p>
+        <!-- <button class="arrow-open"> -->
+        <i class="arrow-down arrow-up"></i>
+        <!-- </button> -->
+  
+        <div class="hidden-box open-box">
+          <p class="faq-text">
+            We accept all major credit cards. We also allow you to pay by electronic bank transfer.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <!-- <p class="number">05</p> -->
+        <p class="subheader">Do you provide additional support?</p>
+        <!-- <button class="arrow-open"> -->
+        <i class="arrow-down arrow-up"></i>
+        <!-- </button> -->
+  
+        <div class="hidden-box">
+          <p class="faq-text">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+<footer class="container-fluid footer ">
+  <div class="row text-center p-5">
     <div class="col-12 mb-5">
       <img src="./images/obi's.png" alt="my logo">
     </div>
-    <div class="col-12 mb-5">
-      <h5>CONTACT</h5>
-      <p>Universiteto Gatve 8</p>
-      <p>Akademija, Kaunas</p>
-      <p><a href="tel:+37069277651">+370-692-77651</a> | <a href="mailto:obikenneth913@gmail.com">obikenneth913@gmail.com</a></p>
+    <div class="col-12 mb-5 text-white">
+      <h5 class="-">CONTACT</h5>
+      <p class="mb-0">Universiteto Gatve 8</p>
+      <p class="street">Akademija, Kaunas</p>
+      <p class="tel-email"><a href="tel:+37069277651">+370-692-77651</a>  |  <a href="mailto:obikenneth913@gmail.com">obikenneth913@gmail.com</a></p>
+      <p class="lead">&copy; KENNYOUNGC 2022</p>
     </div>
     <div class="col-12">
-
+      <ul class="social-icons">
+        <li> <a class="social-links" href="https://www.facebook.com/okbein" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li> <a class="social-links" href="https://twitter.com/Obikenneth913g1?t=DNwvUr7DPrXmCW2AiL2NSg&s=09" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a class="social-links" href="https://www.instagram.com/kennyoung_c/" target="_blank"><ion-icon name="logo-instagram" ></ion-icon></a></li>
+        <li><a class="social-links" href="https://www.linkedin.com/in/kenneth-obi-543a70166/" target="_blank"><ion-icon name="logo-linkedIn"></ion-icon></a></li>
+      </ul>
     </div>
     <div class="col"></div>
   </div>
 </footer>
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">WELCOME!!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>We're so glad you've discovered our site. Sign up today for exclusive travel deals and personalized content picked just for you</p>
+        <form class="modal__form">
+          <label>Full Name</label>
+          <input type="text" />
+         
+          <label>Email Address</label>
+          <input type="email" />
+         
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">SIGN UP!</button>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="./script.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

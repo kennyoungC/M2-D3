@@ -8,16 +8,27 @@ body {
   line-height: 1.3;
   font-family: "Roboto", sans-serif;
 }
+nav {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.ul {
+  width: fit-content !important;
+  margin: 0 !important;
+}
+/* ***************** */
+/* header section */
+/* ***************** */
 .bg-dark {
   background-color: rgb(9 9 10) !important;
   color: #fff !important;
 }
 .logo {
-  width: 70%;
+  width: 55%;
 }
 .jumbotron {
   position: relative;
-  height: 80vh;
+  min-height: 86.7vh;
   position: relative;
 
   background-image: linear-gradient(
@@ -67,6 +78,9 @@ nav a {
 .nav-flex {
   justify-items: end !important;
 }
+/* ***************** */
+/* DISCOVER OUR CITY GUIDE section */
+/* ***************** */
 .catchy-quote {
   font-size: 18px;
   font-style: italic;
@@ -108,7 +122,7 @@ nav a {
     linear-gradient(to top, #ffe3e3 0%, #ffe3e3 300%) right 300% no-repeat,
     linear-gradient(to right, #ffe3e3 0%, #ffe3e3 100%) 9000% 0 no-repeat,
     linear-gradient(to top, #ffe3e3 0%, #ffe3e3 300%) left 9000% no-repeat;
-  transition: background-size 2s ease-in;
+  transition: background-size 1.5s ease-in;
 }
 .city,
 .city ~ .city:hover {
@@ -125,6 +139,9 @@ nav a {
   height: 482px;
   object-fit: cover;
 }
+/* ***************** */
+/* DEAL OF THE WEEK section */
+/* ***************** */
 .deal-box {
   display: flex;
   gap: 24px;
@@ -152,7 +169,9 @@ nav a {
   transform: translateY(-1rem);
   box-shadow: 0 9px 10px rgba(0, 0, 0, 0.4);
 }
-/* slider */
+/* ***************** */
+/* slider section */
+/* ***************** */
 
 .slider {
   max-width: 100rem;
@@ -244,6 +263,9 @@ nav a {
   /* background-color: #888; */
   opacity: 1;
 }
+/* ***************** */
+/* DEAL OF THE DAY section */
+/* ***************** */
 .resort {
   font-size: 24px;
   font-weight: 600;
@@ -287,7 +309,7 @@ nav a {
 }
 
 /* ******************** */
-/*   TESTIMONIAL SECTION */
+/*  TESTIMONIAL SECTION */
 /* ********************* */
 #testimonial {
   background-color: rgb(251, 246, 246);
@@ -335,4 +357,291 @@ section {
   font-weight: 600;
   display: block;
   margin-bottom: 24px;
+}
+/* ***************** */
+/* FAQ section */
+/* ***************** */
+.faq-header {
+  font-size: 48px;
+  /* font-family: "Permanent Marker", cursive; */
+}
+.item {
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 32px;
+  row-gap: 24px;
+  align-items: center;
+}
+.subheader:hover,
+.arrow-open:hover {
+  color: rgb(219, 144, 144);
+}
+
+.hidden-box {
+  grid-column: 1;
+  display: none;
+  line-height: 1.3;
+}
+.arrow-down {
+  background: none;
+}
+.subheader {
+  font-size: 24px;
+  font-weight: 500;
+  /* color: #087f5b; */
+}
+.arrow-open {
+  border: none;
+  background: none;
+}
+
+.arrow-down {
+  border: solid rgba(0, 0, 0, 0.692);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 6px;
+
+  cursor: pointer;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.arrow-down:hover {
+  border: solid hsl(14, 88%, 65%);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 6px;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.open {
+  border-top: hsl(14, 88%, 65%) solid 2px;
+}
+.open .arrow-up {
+  border: solid hsl(14, 88%, 65%);
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 6px;
+
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.open .hidden-box {
+  display: block;
+}
+
+.open .subheader,
+.open .arrow-icon {
+  color: hsl(14, 88%, 65%);
+}
+/* ***************** */
+/* FOOTER section */
+/* ***************** */
+.footer {
+  background-color: #333;
+}
+.contact {
+  font-size: 32px;
+}
+.street {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.tel-email {
+  text-transform: capitalize;
+  font: 20px;
+}
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-links {
+  color: hsl(0, 27%, 96%);
+  font-size: 48px;
+}
+/* *********** */
+/* MODAL WINDOW */
+/* *********** */
+/* .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+} */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+/* .modal__header {
+  font-size: 3.25rem;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+} */
+
+.modal__form {
+}
+
+.modal__form label {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.modal__form input {
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+@media (max-width: 1100px) {
+  .live-text {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    position: absolute;
+    top: 87%;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 55555;
+  }
+}
+@media (max-width: 850px) {
+  .jumbotron {
+    position: relative;
+    min-height: 90vh;
+    position: relative;
+
+    background-image: linear-gradient(
+        rgba(32, 31, 31, 0.6),
+        rgba(44, 42, 42, 0.6)
+      ),
+      url(./images/travel\ cover.jpg);
+    background-size: cover;
+    color: #fff;
+  }
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50px);
+  }
+  .live-text {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 55555;
+  }
+  .richer {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 72px !important;
+    font-family: "Permanent Marker", cursive;
+  }
+  .sub-header {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 550px) {
+  .jumbotron {
+    position: relative;
+    min-height: 90vh;
+    position: relative;
+
+    background-image: linear-gradient(
+        rgba(32, 31, 31, 0.6),
+        rgba(44, 42, 42, 0.6)
+      ),
+      url(./images/travel\ cover.jpg);
+    background-size: cover;
+    color: #fff;
+  }
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50px);
+  }
+  .live-text {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 55555;
+  }
+  .richer {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 64px !important;
+    font-family: "Permanent Marker", cursive;
+  }
+  .sub-header {
+    font-size: 28px;
+    font-weight: 600;
+  }
 }

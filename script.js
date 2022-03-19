@@ -1,5 +1,5 @@
 `use strict`;
-
+// slider
 const slide = function () {
   const slides = document.querySelectorAll(`.slide`);
   const btnLeft = document.querySelector(`.slider__btn--left`);
@@ -89,3 +89,45 @@ const slide = function () {
   });
 };
 slide();
+// faq section
+const boxItem = document.querySelectorAll(`.item`);
+
+boxItem.forEach((el) =>
+  el.addEventListener(`click`, function () {
+    el.classList.toggle(`open`);
+  })
+);
+// smooth scrolling
+document.querySelector(`.nav__links`).addEventListener(`click`, function (e) {
+  e.preventDefault();
+  // Matching strategy
+  if (e.target.classList.contains(`nav__link`)) {
+    const id = e.target.getAttribute(`href`);
+    document.querySelector(id).scrollIntoView({ behavior: `smooth` });
+  }
+});
+const badge = document.querySelectorAll(`.badges`);
+const addBadge = function () {
+  badge.forEach((el) => {
+    console.log(el);
+    // const div = document.createElement(`div`);
+    // div.classList.add(`badge`);
+    // div.textContent = `HOT`;
+    el.innerHTML += `<P class="badge bg-danger">HOT</P>`;
+  });
+};
+// const header = document.querySelector(`.welcome`);
+// header.addEventListener(`click`, addBadge);
+
+// function addToggleButton() {
+//   for (let section of document.querySelectorAll(`section`)) {
+//     section.children[0].classList.add(`collapse`);
+//     section.children[0].classList.add(`show`);
+//     section.innerHTML =
+//       `<button class="btn btn-outline-light bg-dark toggle-btn" data-bs-toggle="collapse" data-bs-target="#${section.id} > div">show/hide section</button>` +
+//       section.innerHTML;
+//   }
+// }
+// // window.onload = function () {
+// addToggleButton();
+// // };
