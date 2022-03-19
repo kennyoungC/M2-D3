@@ -106,28 +106,13 @@ document.querySelector(`.nav__links`).addEventListener(`click`, function (e) {
     document.querySelector(id).scrollIntoView({ behavior: `smooth` });
   }
 });
-const badge = document.querySelectorAll(`.badges`);
-const addBadge = function () {
-  badge.forEach((el) => {
-    console.log(el);
-    // const div = document.createElement(`div`);
-    // div.classList.add(`badge`);
-    // div.textContent = `HOT`;
-    el.innerHTML += `<P class="badge bg-danger">HOT</P>`;
-  });
+window.onload = function () {
+  const addBadges = function () {
+    const cardsTitle = document.querySelectorAll(`#welcome .card-title`);
+    cardsTitle.forEach((title) => {
+      const span = `<span class="badge badge-pill ml-2 badge-danger">HOT</span>`;
+      title.innerHTML = title.innerHTML + span;
+    });
+  };
+  addBadges();
 };
-// const header = document.querySelector(`.welcome`);
-// header.addEventListener(`click`, addBadge);
-
-// function addToggleButton() {
-//   for (let section of document.querySelectorAll(`section`)) {
-//     section.children[0].classList.add(`collapse`);
-//     section.children[0].classList.add(`show`);
-//     section.innerHTML =
-//       `<button class="btn btn-outline-light bg-dark toggle-btn" data-bs-toggle="collapse" data-bs-target="#${section.id} > div">show/hide section</button>` +
-//       section.innerHTML;
-//   }
-// }
-// // window.onload = function () {
-// addToggleButton();
-// // };
