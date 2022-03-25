@@ -32,7 +32,7 @@ nav {
 }
 .jumbotron {
   position: relative;
-  min-height: 86.7vh;
+  min-height: calc(100vh - 147.19px);
   position: relative;
 
   background-image: linear-gradient(
@@ -44,25 +44,17 @@ nav {
   color: #fff;
 }
 .text-box {
+  flex-grow: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50px);
+  align-items: center;
+  flex-direction: column;
 }
+
 .live-text {
   font-family: "Permanent Marker", cursive;
-  text-align: center;
-  width: 100%;
   font-size: 48px;
   font-weight: 800;
-  position: absolute;
-  top: 90%;
-  right: 50%;
-  transform: translate(50%);
-  z-index: 55555;
 }
 .richer {
   font-size: 48px;
@@ -74,7 +66,7 @@ h1 {
 }
 .sub-header {
   font-size: 32px;
-  font-weight: 900;
+  font-weight: 800;
 }
 nav a {
   font-size: 24px;
@@ -82,13 +74,15 @@ nav a {
 .nav-flex {
   justify-items: end !important;
 }
-/* ***************** */
-/* DISCOVER OUR CITY GUIDE section */
-/* ***************** */
 .catchy-quote {
   font-size: 18px;
   font-style: italic;
+  max-width: 50%;
+  min-width: 350px;
 }
+/* ***************** */
+/* DISCOVER OUR CITY GUIDE section */
+/* ***************** */
 .obj-img {
   height: 254px;
   object-fit: cover;
@@ -541,52 +535,14 @@ section {
 }
 @media (max-width: 1100px) {
   .live-text {
-    font-family: "Permanent Marker", cursive;
-    text-align: center;
-    width: 100%;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
-    position: absolute;
-    top: 87%;
-    right: 50%;
-    transform: translate(50%);
-    z-index: 55555;
   }
 }
 @media (max-width: 850px) {
-  .jumbotron {
-    position: relative;
-    min-height: 90vh;
-    position: relative;
-
-    background-image: linear-gradient(
-        rgba(32, 31, 31, 0.6),
-        rgba(44, 42, 42, 0.6)
-      ),
-      url(./images/travel\ cover.jpg);
-    background-size: cover;
-    color: #fff;
-  }
-  .text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50px);
-  }
   .live-text {
-    font-family: "Permanent Marker", cursive;
-    text-align: center;
-    width: 100%;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
-    position: absolute;
-    top: 90%;
-    right: 50%;
-    transform: translate(50%);
-    z-index: 55555;
   }
   .richer {
     font-size: 32px;
@@ -594,47 +550,19 @@ section {
   }
   h1 {
     font-size: 72px !important;
-    font-family: "Permanent Marker", cursive;
   }
   .sub-header {
     font-size: 32px;
     font-weight: 700;
   }
+  .catchy-quote {
+    font-size: 16px;
+  }
 }
 @media (max-width: 550px) {
-  .jumbotron {
-    position: relative;
-    min-height: 90vh;
-    position: relative;
-
-    background-image: linear-gradient(
-        rgba(32, 31, 31, 0.6),
-        rgba(44, 42, 42, 0.6)
-      ),
-      url(./images/travel\ cover.jpg);
-    background-size: cover;
-    color: #fff;
-  }
-  .text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50px);
-  }
   .live-text {
-    font-family: "Permanent Marker", cursive;
-    text-align: center;
-    width: 100%;
     font-size: 28px;
     font-weight: 600;
-    position: absolute;
-    top: 90%;
-    right: 50%;
-    transform: translate(50%);
-    z-index: 55555;
   }
   .richer {
     font-size: 28px;
@@ -642,7 +570,6 @@ section {
   }
   h1 {
     font-size: 64px !important;
-    font-family: "Permanent Marker", cursive;
   }
   .sub-header {
     font-size: 28px;
